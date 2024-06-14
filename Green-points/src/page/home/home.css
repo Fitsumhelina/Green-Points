@@ -1,0 +1,223 @@
+.mainframes{
+    background-image: url('../../assets/farmer_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+  }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.get-started-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.fieldset{
+    display: initial;
+    border-radius: 10px;
+}
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.login-signup h2 {
+    color: #2c5f2d;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-signup p {
+    font-size: 16px;
+    color: #6c757d;
+    margin: 20px 0;
+}
+
+.signup {
+    background-color: #2c5f2d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.signup:hover {
+    opacity: 0.9;
+}
+
+.login-form {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-form h3 {
+    color: #2c5f2d;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.signin {
+    background-color: #2c5f2d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.signin:hover {
+    opacity: 0.9;
+}
+
+.other-signin {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.google-signin {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.google-signin i {
+    margin-right: 10px;
+}
+
+.google-signin:hover {
+    opacity: 0.9;
+}
+
+
+
+.box {
+    margin: 10%;
+    padding: 50px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.208);
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.box:hover {
+    color: white;
+    background-color: #0800008e;
+    transform: scale(1.05);
+}
+
+.admin-box h2, .farmer-box h2 {
+    font-size: 2em;
+    margin: 0;
+}

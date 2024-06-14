@@ -1,0 +1,147 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f7;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #d3e9d7;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .sidebar-header {
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    margin: 15px 0;
+  }
+  
+  .sidebar-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .menu-heading {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
+  }
+  
+  .main-header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .main-header nav ul li {
+    display: inline;
+  }
+  
+  .main-header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .farmers-search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .farmers-search h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .farmers-search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .farmers-search p {
+    margin: 5px 0 20px;
+    color: #666;
+  }
+  
+  .filter-button, .req-button {
+    background-color: #a1d99b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .req-button {
+    background-color: #ffffff;
+    color: #a1d99b;
+    border: 1px solid #a1d99b;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .farmer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .farmer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .farmer-name {
+    font-weight: bold;
+  }
+  
+  .farmer-location {
+    color: #666;
+  }
+  
+  .add-button {
+    background-color: #a1d99b;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

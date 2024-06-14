@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles_dashboard.css" />
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1><i class="fas fa-leaf"></i> Green Points</h1>
+                <h2>Dashboard</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" onclick="showPage('farmers')">Farmers</a></li>
+                <li><a href="#" onclick="showPage('weather')">Weather</a></li>
+                <li><a href="#" onclick="showPage('yearly')">Yearly Plan</a></li>
+                <li class="menu-heading">Promote</li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <nav>
+                    <ul>
+                        <li><a href="#">My Task</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Stats</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="main-dashboard">
+                 <div id="farmers" class="page">
+                    <div class="farmers-search">
+                        <h1>Farmers Search</h1>
+                        <input type="text" placeholder="Farmer or City Name" id="searchInput" onkeyup="filterFarmers()" />
+                        <p>Separate multiple search terms with a comma, e.g.: John, New York</p>
+                        <button class="filter-button">More filters</button>
+                        <button class="req-button">Status</button>
+                        <div class="results">
+                            <p id="resultsCount">7 results</p>
+                            <div class="farmer-list" id="farmerList">
+                                <div class="farmer">
+                                    <p class="farmer-name">Abrham Tadele</p>
+                                    <p class="farmer-location">Gondar, Ethiopia</p>
+                                </div>
+                                <div class="farmer">
+                                    <p class="farmer-name">Dawit Mekonnen</p>
+                                    <p class="farmer-location">Gondar, Ethiopia</p>
+                                    
+                                </div>
+                                <div class="farmer">
+                                    <p class="farmer-name">Abera Samuel</p>
+                                    <p class="farmer-location">Gondar, Ethiopia</p>
+                                    
+                                </div>
+                                <div class="farmer">
+                                    <p class="farmer-name">Elias Wolde</p>
+                                    <p class="farmer-location">Gondar, Ethiopia</p>
+                                    
+                                </div>
+                                <div class="farmer">
+                                    <p class="farmer-name">Fitsum Gabissa</p>
+                                    <p class="farmer-location">Gondar, Ethiopia</p>
+                                    
+                                </div>
+                                <div class="farmer">
+						<p class="farmer-name">Demelas Admasew</p>
+                                    <p class="farmer-location">Gondar, Ethiopia</p>
+                                    
+                                </div>
+                                <div class="farmer">
+                                    <p class="farmer-name">Abel Dawit</p>
+                                    <p class="farmer-location">Gondar, Ethiopia</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="weather" class="page" style="display: none;">
+                    <div class="weather-summary">
+                        <div class="temperature">
+                            <h1>57°F</h1>
+                            <p>Scattered Clouds • H:57°F L:39°F</p>
+                            <p>Sunset: 6:05PM</p>
+                        </div>
+                        <div class="details">
+                            <p>Feels like 53°F</p>
+                            <p>Sky Cover: 43%</p>
+                            <p>Wind: 7 mph</p>
+                            <p>Humidity: 25%</p>
+                            <p>1-hr Precip: 0mm</p>
+                        </div>
+                    </div>
+                    <div class="hourly-forecast">
+                        <div class="forecast-header">
+                            <span>Hourly</span>
+                            <span>Daily</span>
+                            <span>Map</span>
+                        </div>
+                        <div class="forecast-graph">
+                            <canvas id="forecastChart"></canvas>
+                        </div>
+                        <div class="forecast-details">
+                            <div class="hourly">
+                                <p>5PM</p>
+                                <p>55°F</p>
+                                <p>7mph</p>
+                                <p>0.21%</p>
+                            </div>
+                            <div class="hourly">
+                                <p>6PM</p>
+                                <p>47°F</p>
+                                <p>5mph</p>
+                                <p>0.21%</p>
+                            </div>
+                            <div class="hourly">
+                                <p>7PM</p>
+                                <p>45°F</p>
+                                <p>5mph</p>
+                                <p>0.06%</p>
+                            </div>
+                            <div class="hourly">
+                                <p>8PM</p>
+                                <p>43°F</p>
+                                <p>1mph</p>
+                                <p>0.06%</p>
+                            </div>
+                            <div class="hourly">
+                                <p>9PM</p>
+                                <p>42°F</p>
+                                <p>0mph</p>
+                                <p>0.06%</p>
+                            </div>
+                            <div class="hourly">
+                                <p>10PM</p>
+                                <p>40°F</p>
+                                <p>1mph</p>
+                                <p>0%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="yearly" class="page" style="display: none;">
+                    <h1>Yearly Plan</h1>
+                    <p>Content for the yearly plan goes here.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+        // Function to show the specified page and hide others
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+
+            // Optionally, initialize content-specific functions
+            if (pageId === 'weather') {
+                initializeWeatherChart();
+            }
+        }
+
+        // Example function to initialize a chart for the weather page
+        function initializeWeatherChart() {
+            const ctx = document.getElementById('forecastChart').getContext('2d');
+            const forecastChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['5PM', '6PM', '7PM', '8PM', '9PM', '10PM'],
+                    datasets: [{
+                        label: 'Temperature',
+                        data: [55, 47, 45, 43, 42, 40],
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false, // Disable the aspect ratio
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+         
+
+        // Function to filter farmers in real time
+        function filterFarmers() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const farmers = document.querySelectorAll('.farmer');
+            let count = 0;
+
+            farmers.forEach(farmer => {
+                const name = farmer.querySelector('.farmer-name').innerText.toLowerCase();
+                const location = farmer.querySelector('.farmer-location').innerText.toLowerCase();
+                if (name.includes(input) || location.includes(input)) {
+                    farmer.style.display = 'block';
+                    count++;
+                } else {
+                    farmer.style.display = 'none';
+                }
+            });
+
+            document.getElementById('resultsCount').innerText = `${count} results`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Show default page on page load
+            showPage('farmers');
+        });
+    </script>
+</body>
+</html>
