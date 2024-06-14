@@ -2,15 +2,17 @@
 
 # Green-points
 
-Green-points is a web application aimed at promoting environmental awareness and encouraging eco-friendly practices among individuals and communities. The platform provides users with a gamified experience where they can earn points for participating in various environmentally friendly activities, such as recycling, using renewable energy, reducing carbon footprint, and more.
+Green-points is an AI-powered Telegram bot and web application designed to facilitate farmers' work through advanced AI-driven farming, crop, fertilizer, and weather suggestions. The platform collects data from farmers via local administrators (Kebele DA) using the Telegram bot and provides detailed analysis on the web application once they sign in.
 
 ## Features:
 
-- **Point System**: Users earn points for every eco-friendly action they take.
-- **Leaderboard**: Compete with friends and the community to see who can earn the most points.
-- **Challenges**: Engage in challenges to earn bonus points and rewards.
-- **Community Engagement**: Connect with like-minded individuals, share tips, and collaborate on environmental initiatives.
-- **Educational Resources**: Access articles, videos, and guides on sustainable living and environmental conservation.
+- **AI-Powered Farming Recommendations**: Receive personalized farming advice based on data collected from each farmer.
+- **Crop and Fertilizer Suggestions**: Get tailored suggestions for crops and fertilizers to optimize yield.
+- **Weather Forecasts**: Access accurate weather forecasts to plan farming activities effectively.
+- **Data Collection via Telegram Bot**: Farmers’ data is collected through a user-friendly Telegram bot used by Kebele DAs.
+- **Detailed Analysis on Web App**: Sign in to the web application to view comprehensive analyses of the collected data.
+- **Community Engagement**: Connect with other farmers and share tips and experiences.
+- **Educational Resources**: Access articles, videos, and guides on sustainable farming practices and advanced agricultural techniques.
 
 ## Installation:
 
@@ -61,7 +63,7 @@ For questions or feedback, feel free to reach out to the project maintainer [her
 ```
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) [2024] [fitsum helina]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
